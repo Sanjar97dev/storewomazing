@@ -1,0 +1,177 @@
+.contacts {
+    margin-top: 180px;
+}
+
+.contacts__block {
+    width: 1110px;
+    margin: 0 auto;
+}
+
+
+.contacts__title {
+    width: 258px;
+    height: 111px;
+    top: 269px;
+    left: 3px;
+    gap: 26px;
+    margin-bottom: 110px;
+}
+
+.contacts__title h2 {
+    font-family: Raleway;
+    font-size: 55px;
+    font-weight: 500;
+    line-height: 61px;
+    letter-spacing: 0.02em;
+    text-align: left;
+}
+
+.contacts__title a {
+    font-family: Raleway;
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    text-align: left;
+}
+
+.contacts__title a:hover {
+    color: rgba(144, 144, 144, 1);
+}
+
+.contacts__carta__block {
+    width: 1110px;
+    height: 476px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(221, 221, 221, 1);
+    margin-bottom: 100px;
+}
+
+.contacts__carta__block span {
+    font-family: Raleway;
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    text-align: left;
+}
+
+.contacts__connect {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+
+.contacts__phone h3 {
+    font-family: Raleway;
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    text-align: left;
+}
+
+.contacts__phone a {
+    font-family: Raleway;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: 0.02em;
+    text-align: left;
+}
+
+.contacts__email h3 {
+    font-family: Raleway;
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    text-align: left;
+}
+
+.contacts__email a {
+    font-family: Raleway;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: 0.02em;
+    text-align: left;
+}
+
+.contacts__address h3 {
+    font-family: Raleway;
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    text-align: left;
+}
+
+.contacts__address address {
+    font-family: Raleway;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: 0.02em;
+    text-align: left;
+}
+
+.contacts__form {
+    width: 443px;
+    height: 705px;
+    gap: 62px;
+    margin-bottom: 100px;
+}
+
+.contacts__form h3 {
+    font-family: Raleway;
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 35px;
+    letter-spacing: 0.02em;
+    text-align: left;
+}
+
+.contacts__word{
+    margin-top: 50px;
+}
+
+.contacts__word input{
+    width: 350px;
+    height: 40px;
+    gap: 16px;
+    border: none;
+
+}
+
+#message{
+    width: 443px;
+    height: 134px;
+    font-family: Raleway;
+    font-size: 17px;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+}
+
+.successMessage{
+    margin: 70px 0px;
+    width: 437px;
+    height: 84px;
+    padding: 30px, 76px, 30px, 76px;
+    gap: 10px;
+    background-color: rgba(241, 234, 220, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.successMessage h4{
+    font-family: Raleway;
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    text-align: left;
+}

@@ -1,0 +1,300 @@
+.hero {
+    margin-bottom: 80px;
+}
+
+.hero__block {
+    display: flex;
+    align-items: center;
+    width: 1110px;
+    height: 650px;
+    margin: auto;
+}
+
+.hero__text__block {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 563px;
+    height: 385px;
+    top: 265px;
+    left: 230px;
+}
+
+.hero__text__block h1 {
+    font-family: Raleway;
+    font-size: 55px;
+    font-weight: 500;
+    line-height: 61px;
+    letter-spacing: 0.02em;
+    text-align: left;
+}
+
+.hero__text__block p {
+    font-family: Raleway;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0.02em;
+    text-align: right;
+}
+
+.hero__btns {
+    margin-left: 75px;
+}
+
+.hero__text__block button {
+    padding: 10px;
+    font-family: Raleway;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    text-align: center;
+    border-radius: 0px;
+}
+
+.hero__img__block {
+    position: absolute;
+    width: 705px;
+    height: 826px;
+    top: 0;
+    left: 895px;
+    background-color: rgb(220 160 39 / 20%);
+}
+
+.fashion1 {
+    position: absolute;
+    width: 410px;
+    height: 646px;
+    top: 120px;
+    left: 52px;
+}
+
+.fashion2 {
+    position: absolute;
+    width: 197px;
+    height: 197px;
+    top: 243px;
+    right: 140px;
+}
+
+.fashion3 {
+    position: absolute;
+    width: 190px;
+    height: 318px;
+    top: 508px;
+    left: -82px;
+}
+
+/*product--block*/
+.product {
+    margin: 150px 0 20px 0;
+}
+
+.product__block {
+    width: 1110px;
+    margin: auto;
+}
+
+.product__block h1 {
+    font-family: Raleway;
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 44px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    padding: 80px 0px;
+}
+
+.product__block__one {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 30px;
+}
+
+.product__block__one img {
+    width: 350px;
+    height: 558px;
+    gap: 24px;
+    margin-bottom: 20px;
+}
+
+.product__block__one h3 {
+    font-family: Raleway;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: 0.02em;
+    text-align: center;
+}
+
+.product__block__one p {
+    font-family: Raleway;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 21px;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: rgba(156, 156, 156, 1);
+    padding-bottom: 40px;
+}
+
+.product__block__section {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.product__block__section button {
+    font-family: Raleway;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: rgba(110, 156, 159, 1);
+    border-radius: 0px;
+    padding: 15px;
+    border: 1px solid rgba(110, 156, 159, 1);
+}
+
+/* product block end*/
+
+/*service block*/
+
+.service {
+    margin: 80px 0px;
+}
+
+.service__block {
+    width: 1110px;
+    margin: 0 auto;
+}
+
+.service__block__section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.service__block__one {
+    width: 350px;
+    height: 272px;
+    gap: 37px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.service__block__one img {
+    width: 61px;
+    height: 61px;
+}
+
+.service__block__one h3 {
+    font-family: Raleway;
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 35px;
+    letter-spacing: 0.02em;
+    text-align: left;
+}
+
+.service__block__one p {
+    width: 300px;
+    font-family: Raleway;
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    text-align: left;
+}
+
+.service__block h1 {
+    padding: 80px 0px;
+    font-family: Raleway;
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 44px;
+    letter-spacing: 0.02em;
+    text-align: left;
+}
+
+/*service block end*/
+
+/*command dream*/
+
+.command {
+    margin-bottom: 60px;
+}
+
+.command__block {
+    width: 1110px;
+    margin: 0 auto;
+}
+
+.command__block h1 {
+    padding: 80px 0px;
+    font-family: Raleway;
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 44px;
+    letter-spacing: 0.02em;
+    text-align: left;
+}
+
+.command__block__section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.command__block__section img {
+    width: 729px;
+    height: 487px;
+}
+
+.command__block__section span {
+    width: 14px;
+    height: 28px;
+    top: 239px;
+    left: 760px;
+    border: 1px;
+}
+
+.service__block__text {
+    width: 255px;
+    height: 331px;
+    gap: 28px;
+}
+
+.service__block__text h3 {
+    font-family: Raleway;
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 35px;
+    letter-spacing: 0.02em;
+    text-align: left;
+}
+
+.service__block__text p {
+    font-family: Raleway;
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    padding: 20px 0px;
+}
+
+.service__block__text h5 {
+    font-family: Raleway;
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    color: rgba(110, 156, 159, 1);
+}

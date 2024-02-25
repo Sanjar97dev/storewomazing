@@ -1,0 +1,158 @@
+.footer {
+    background-color: rgba(241, 234, 220, 1);
+    height: 363px;
+    display: flex;
+    align-items: center;
+}
+
+.header {
+    margin: 40px 0px;
+}
+
+.footer__block {
+    width: 1110px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer__logo {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.footer__logo img {
+    width: 18.07px;
+    height: 25px;
+    left: 3.47px;
+}
+
+.footer__logo h1 {
+    margin-top: 8px;
+    font-family: Raleway;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19px;
+    letter-spacing: 0.1em;
+    text-align: left;
+}
+
+.footer__nav__block ul {
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    column-gap: 80px;
+}
+
+.footer__nav__block a {
+    font-family: Raleway;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    color: black;
+}
+
+.footer__nav__block a:hover {
+    font-family: Raleway;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    color: rgba(110, 156, 159, 1);
+}
+
+
+.phone {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    font-family: Raleway;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0.02em;
+    text-align: left;
+}
+
+.email {
+    text-align: right;
+}
+
+.footer__text__block {
+    width: 1110px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__text__one {
+    padding-top: 50px;
+    width: 204px;
+    height: 66px;
+    top: 196px;
+    left: 245px;
+    gap: 6px;
+
+}
+
+.footer__text__one h4 {
+    font-family: Raleway;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0.02em;
+    text-align: left;
+}
+
+.footer__text__two {
+    padding-top: 27px;
+    padding-right: 245px;
+    width: 70px;
+    height: 102px;
+    top: 164px;
+    left: 637px;
+    gap: 10px;
+}
+
+.footer__text__two h5 {
+    font-family: Raleway;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0.02em;
+    text-align: left;
+}
+
+.footer__text__three {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.footer__text__three a {
+    font-family: Raleway;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0.02em;
+    text-align: left;
+}
+
+.footer__text__three img {
+    width: 68px;
+    height: 22px;
+    top: 238px;
+    left: 1287px;
+}
+
+.social {
+    display: flex;
+    justify-content: right;
+    column-gap: 10px;
+}
