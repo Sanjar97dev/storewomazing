@@ -3,25 +3,28 @@ import axios from 'axios'
 import './style/shop.css'
 import { Link, NavLink } from 'react-router-dom'
 import { t } from 'i18next'
-const url = 'https://65ce2c1fc715428e8b401f4e.mockapi.io/3/name'
+import { useDispatch, useSelector } from 'react-redux'
+import { getShop } from '../redux/slice/shopSlice'
+
 
 const Shop = () => {
-  const [products, setProducts] = useState(null)
 
-  async function getShop() {
-    const { data } = await axios(url)
-    setProducts(data)
-    console.log(data);
-  }
+  const { products, loading, error } = useSelector(state => state.shop)
+
+  const dispatch = useDispatch()
 
   useEffect(() => {
-    getShop()
+    dispatch(getShop())
   }, [])
+
+  console.log(products);
+
+
 
   if (products === null) {
     return <h1>Loading</h1>;
   }
-    
+
   return (
     <section className='products'>
       <div className="container">
@@ -54,7 +57,7 @@ const Shop = () => {
                     <div className='products__img'>
                       <img src={product.img} alt="ProductImg" />
                       <h3>{t(product.name)}</h3>
-                      <p>{product.price}</p>
+                      <p>{product.price} $</p>
                     </div>
                   </NavLink>
                 ))}
@@ -66,7 +69,7 @@ const Shop = () => {
                     <div className='products__img'>
                       <img src={product.img} alt="ProductImg" />
                       <h3>{t(product.name)}</h3>
-                      <p>{product.price}</p>
+                      <p>{product.price} $</p>
                     </div>
                   </NavLink>
                 ))}
@@ -78,7 +81,7 @@ const Shop = () => {
                     <div className='products__img'>
                       <img src={product.img} alt="ProductImg" />
                       <h3>{t(product.name)}</h3>
-                      <p>{product.price}</p>
+                      <p>{product.price} $</p>
                     </div>
                   </NavLink>
                 ))}

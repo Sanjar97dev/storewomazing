@@ -37,11 +37,11 @@ const Header = ({ cartCount, changeLang }) => {
 
                     </div>
 
-                    <div class="dropdown">
+                    <div className="dropdown">
                         <button id='secondary' className="btn btn-light dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            <i class="bi bi-globe"></i>
+                            <i className="bi bi-globe"></i>
                         </button>
-                        <ul class="dropdown-menu">
+                        <ul className="dropdown-menu">
                             <li><a onClick={() => changeLang('en')} className="dropdown-item">English</a></li>
                             <li><a onClick={() => changeLang('ru')} className="dropdown-item">Russian</a></li>
                             <li><a onClick={() => changeLang('kg')} className="dropdown-item">Kyrgyz</a></li>

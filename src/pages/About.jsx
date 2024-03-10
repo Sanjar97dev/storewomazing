@@ -23,6 +23,7 @@ const About = () => {
 
             <div className="about__block__idea">
               <img src={ideaWomen} alt="" />
+              
 
               <div className="about__idea__text">
                 <h3>{t("Идея и женщина")}</h3>

@@ -1,34 +1,46 @@
-import React, { useEffect, useState } from 'react';
-import axios from 'axios';
+import React, { useEffect } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import './style/detail.css';
-const url = 'https://65ce2c1fc715428e8b401f4e.mockapi.io/3/name';
 import { t } from 'i18next'
+import { useDispatch, useSelector } from 'react-redux';
+import { getProduct } from '../redux/slice/cartSlice';
 
 
 
 const Detail = ({ addToCard }) => {
   const params = useParams();
-  const [product, setProduct] = useState(null);
+  // const [product, setProduct] = useState(null);
 
-  async function getProduct() {
-    const { data } = await axios.get(url + '/' + params.ProductId)
-    console.log('Product Data:', data);
-    setProduct(data)
-  }
+  // async function getProduct() {
+  //   const { data } = await axios.get(url + '/' + params.ProductId)
+  //   console.log('Product Data:', data);
+  //   setProduct(data)
+  // }
+
+  const {product, loading, error} = useSelector(state=> state.carts)
+  
+  const dispatch = useDispatch()
 
   useEffect(() => {
-    getProduct();
-  }, [])
+    dispatch(getProduct(params.ProductId))
+  }, [dispatch, params.ProductId])
 
-  if (product === null) {
-    return <h1> Loading </h1>
+
+
+  if (loading) {
+    return <h1>Loading...</h1>;
   }
+  
+  if (!product) {
+    return <h1>Cart data not available</h1>;
+  }
+  
 
   const handleAddToCart = (product) => {
     addToCard(product);
   };
 
+  console.log(product);
   return (
     <section className='detail'>
       <div className="container">
@@ -40,7 +52,7 @@ const Detail = ({ addToCard }) => {
 
           <div className="detail__block__section">
             <div className="detail__section__product">
-              <img src={product.img} alt="" />
+              <img src={product.img} alt={product.name} />
               <div className="detail__block__text">
                 <h4>{product.price}</h4>
 

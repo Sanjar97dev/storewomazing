@@ -7,25 +7,31 @@ import serviceImg from '../img/important/adam-winger-fI-TKWjKYls-unsplash 1.svg'
 import ptichka from '../img/important/ptichka.svg'
 import edit from '../img/important/edit.svg'
 import arm from '../img/important/arm.svg'
-import axios from 'axios'
 import { Link } from 'react-router-dom'
 import { t } from 'i18next'
-const url = 'https://65ce2c1fc715428e8b401f4e.mockapi.io/3/name';
+import { useDispatch, useSelector } from 'react-redux'
+import { getShop } from '../redux/slice/shopSlice'
+
 const Home = () => {
-  const [products, setProducts] = useState(null)
+ 
+
   const [service, setService] = useState([
     { img: ptichka, title: t("Качество"), description: t("Наши профессионалы работают на лучшем оборудовании для пошива одежды беспрецедентного качества") },
     { img: edit, title: t("Скорость"), description: t("Благодаря отлаженной системе в Womazing мы можем отшивать до 20-ти единиц продукции в наших собственных цехах") },
-    { img: arm, title: t("Ответственность"), description: t("Мы заботимся о людях и планете. Безотходное производство и комфортные условия труда - все это Womazing") }
+    { img: arm, title: t("Ответственность"), description: t("Мы заботимся о людях и планете. Безотходное производство и комфортные условия труда - все это Womazing") },
+  
   ])
-  async function getShop() {
-    const { data } = await axios.get(url)
-    setProducts(data)
-  };
+ 
+  const {products, loading, error} = useSelector(state=> state.shop)
+  const dispatch = useDispatch()
+
+  
 
   useEffect(() => {
-    getShop()
+   dispatch(getShop())
   }, [])
+  
+  console.log(products);
 
   if (products === null) {
     return <h1>Loading</h1>
